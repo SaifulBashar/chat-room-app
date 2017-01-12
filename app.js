@@ -2,6 +2,7 @@ var express = require("express"),
     app = new express(),
     rooms = require("./data/rooms.json"),
     bodyParser = require("body-parser"),
+    _ = require("lodash"),
     uuid = require("node-uuid");
 
 
@@ -59,6 +60,17 @@ app.get('/admin/rooms/delete/:id', function (req, res) {
     res.redirect("/admin/rooms");
 
 });
+
+//edit chatroom
+app.get('/admin/rooms/edit/:id', function (req, res) {
+    var roomId = req.params.id;
+    var room = _.find(rooms,r => r.id === roomId);
+    res.render("edit.jade",{room});
+
+
+});
+
+
 
 app.listen(3000, function () {
     console.log("running .........");
