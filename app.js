@@ -14,8 +14,8 @@ app.get("/", function (req, res) {
 
 
 //route to /admin/rooms
-var admin = require("./admin");
-admin(app);
+var adminRouter = require("./admin");
+app.use("/admin",adminRouter);
 app.listen(3000, function () {
     console.log("running .........");
 });
