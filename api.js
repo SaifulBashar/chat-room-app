@@ -10,3 +10,19 @@ module.exports = router;
 router.get("/rooms", function (req, res) {
     res.json(rooms);
 });
+
+router.get("/rooms/:roomid/messages",function (req,res) {
+    var roomId = req.params.roomid;
+    var roomMessage = messages.filter(m => m.roomId === roomId);
+    var room = _.find(rooms, r => r.id === roomId);
+    console.log(room);
+    if(!room){
+        res.sendStatus(404);
+        return;
+    }
+
+    res.json({
+        room:room,
+        messages:roomMessage
+    });
+});
