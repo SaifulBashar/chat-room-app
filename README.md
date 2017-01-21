@@ -8,7 +8,9 @@
 <li>Delete message</li>
 </ul>
 
-<h2>Tools</h2>
+<h2>NPM packages</h2>
 
 <p>1. Server End Framework : ExpressJS</p>
 <p>2. Front End : Jade templete engine</p>
+<p>3. Lodash(iterating object)</p>
+<p>4. Bodyparcer middleware(get post value from input)</p>
