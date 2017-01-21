@@ -16,4 +16,4 @@
 <p>4. Bodyparcer middleware(get post value from input)</p>
 
 <h1>Database</h1>
-<p style = "color:blue;"> All data fetch from json file <p>
+<p style="color: blue"> All data fetch from json file <p>
