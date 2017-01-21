@@ -14,3 +14,6 @@
 <p>2. Front End : Jade templete engine</p>
 <p>3. Lodash(iterating object)</p>
 <p>4. Bodyparcer middleware(get post value from input)</p>
+
+<h1>Database</h1>
+<p style = "color:blue;"> All data fetch from json file <p>
